@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: edu-goods
+app:
+  run:
+    type: default
+server:
+  port: 80
