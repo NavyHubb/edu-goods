@@ -62,7 +62,7 @@ jobs:
 
       - name: Commit files   # kubernetes 설정 파일 변경 사항을 커밋하고 manifest를 관리하는 GitHub 레포지토리에 푸시
         run: |
-          cd edu-user
+          cd edu-goods
           echo "Committing updated files to the repository..."
           git config --global user.email "sngjae972@github.com"
           git config --global user.name "김성재"
@@ -71,6 +71,6 @@ jobs:
             echo "No changes to commit"
           else
             echo "Committing updated files to the repository..."
-            git commit -m "Update image tag to ${{ env.VERSION }} for edu-user"
+            git commit -m "Update image tag to ${{ env.VERSION }} for edu-goods"
             git push -u origin main
           fi
