@@ -11,7 +11,7 @@ public class GoodsService {
         // 실제로는 DB에서 정보를 조회하거나 다른 API를 호출하는 로직이 들어갈 수 있음
         return new GoodsDto(
             goodNo,
-            "Product " + goodNo
+            "goods-prod-" + goodNo
         );
     }
 }
